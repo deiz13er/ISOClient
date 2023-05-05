@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.isoclient.HelloController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <StackPane prefHeight="50.0" prefWidth="200.0">
+               <children>
+                  <Button onAction="#onSendButtonClick" text="Send" />
+               </children>
+            </StackPane>
+            <TextArea fx:id="request_text" editable="false" prefHeight="150.0" prefWidth="600.0" promptText="Request Message" />
+            <TextArea fx:id="response_text" editable="false" prefHeight="150.0" prefWidth="600.0" promptText="Response Message" />
+         </children>
+      </VBox>
+      <Button fx:id="settings_button" mnemonicParsing="false" onAction="#onSettingsButtonClick" text="" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <graphic>
+            <ImageView fx:id="settings_image" fitHeight="40.0" fitWidth="40.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../images/settings.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+
+   </children>
+</AnchorPane>
